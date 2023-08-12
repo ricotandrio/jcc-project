@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lakki+Reddy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* font-family: 'Lakki Reddy', cursive; */
+/* font-family: 'Krona One', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+}
+
+:root {
+    font-size: 1.2vw;
+}
+
+.overview_container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.title {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', 'Tahoma', 'Verdana',  sans-serif;
+}
+
+.title h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.line_black {
+    width: 50%;
+    height: 0.1em;
+    background-color: black;
+}
+
+.package_container {
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-top: 2em;
+    gap: 2vh;
+    font-family: 'Roboto', 'Tahoma', 'Verdana',  sans-serif;
+}
+
+.package {
+    position: relative;
+    width: 90%;
+    border: 0.3em solid transparent;
+    padding-left: 1em;
+    margin-left: 1em;
+    transition: ease-in-out 0.2s;
+}
+
+.package h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.package h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.1em 0 0.5em 0;
+    color: gray;
+}
+
+.package p {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.standard {
+    border-left-color: #00BFB3;
+}
+
+.standard:hover {
+    border: 0.6em solid transparent;
+    border-left-color: #00BFB3;
+}
+
+.gold {
+    border-left-color: #E0BC75;
+}
+
+.gold:hover {
+    border: 0.6em solid transparent;
+    border-left-color: #E0BC75;
+}
+
+.platinum {
+    border-left-color: #BFDDF2;
+}
+
+.platinum:hover {
+    border: 0.6em solid transparent;
+    border-left-color: #BFDDF2;
+}
+
+.custom {
+    border-left-color: #620D24;
+}
+
+.custom:hover {
+    border: 0.6em solid transparent;
+    border-left-color: #620D24;
+}
+
+#contact_us {
+    transition: ease-in-out 0.5s;
+}
+
+#contact_us a {
+    text-decoration: none;
+    color: #620D24;
+}
+
+#contact_us:hover {
+    color: #620D24;
+
+}
+
+.make_trust {
+    position: relative;
+    width: 100%;
+    padding: 2em 3em 2em 3em;
+    margin-top: 10vh;
+    background-color: #f5efdc;
+    font-family: 'Roboto', 'Tahoma', 'Verdana',  sans-serif;
+}
+
+.make_trust h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding-bottom: 0.5em;
+}
+
+.make_trust h2 {
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.room_img {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10vh 0 5vh 0;
+    gap: 0.8em;
+}
+
+.room_img h1 {
+    font-family: 'Roboto', 'Tahoma', 'Verdana',  sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0 0.8em 1em 0.8em;
+}
+
+.img_container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5efdc;
+}
+
+.img_container img {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    margin-bottom: 1em;
+    /* border-radius: 50px 0 50px 0; */
+    transition: ease-in-out 0.5s;
+}
+
+.img_container h1 {
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Roboto', 'Tahoma', 'Verdana',  sans-serif;
+}
+
+.package_information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', 'Tahoma', 'Verdana',  sans-serif;
+    text-align: center;
+    padding: 5em 0 5em 0;
+}
+
+.information {
+    position: relative;
+    width: 50%;
+    padding: 2em;
+}
+
+.pack {
+    position: relative;
+    width: 100%;
+    padding: 2em;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pack h1  {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.pack h2 {
+    font-weight: 400;
+    margin-bottom: 0.6em;
+    margin-top: 1em;
+    font-size: 1.5rem;
+}
+
+.pack ul li {
+    list-style: none;
+    margin: 2em;
+    font-weight: 300;
+}
+
+.line_standard {
+    width: 70%;
+    height: 0.2em;
+    background-color: #00BFB3;
+    margin: 1.5em 0 1em 0;
+}
+
+.line_gold {
+    width: 70%;
+    height: 0.2em;
+    background-color: #E0BC75;
+    margin: 1.5em 0 1em 0;
+}
+
+.line_platinum {
+    width: 70%;
+    height: 0.2em;
+    background-color: #BFDDF2;
+    margin: 1.5em 0 1em 0;
+}
+
+@media all and (max-width: 768px){
+    :root {
+        font-size: 14px;
+    }
+
+    .package {
+        width: 70%;
+    }
+
+    .information {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 480px){
+    :root {
+        font-size: 10px;
+    }
+
+    .package_container {
+        align-items: center;
+    }
+
+    .package {
+        width: 100%;
+    }
+
+    .information {
+        width: 100%;
+    }
+
+    .room_img {
+        flex-direction: column;
+    }
+
+    .img_container img {
+        width: 70%;
+        height: 250px;
+    }
+}

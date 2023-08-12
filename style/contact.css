@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lakki+Reddy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* font-family: 'Lakki Reddy', cursive; */
+/* font-family: 'Krona One', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', 'Tahoma', 'Verdana',  sans-serif;
+}
+
+:root {
+    font-size: 16px;
+}
+
+sub {
+    color: gray;
+}
+
+main {
+    background-image: url(../asset/img/groovepaper.png);
+}
+
+.contact_title {
+    position: relative;
+    width: 100%;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 55vw;
+}
+
+.contact_title img {
+    width: 100%;
+    height: 40vw;
+    filter: blur(0.2em);
+}
+
+.text {
+    position: absolute;
+    top: 30vw;
+    width: 90%;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background-color: #E0BC75;
+    filter: drop-shadow(0 0.4em 0.4em rgba(0, 0, 0, 0.25));
+}
+
+.text h1 {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.text p {
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.line {
+    height: 0.2em;
+    background-color: black;
+    width: 20%;
+    margin: 1em 0 2em 0;
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.center_form {
+    width: 70%;
+    /* border: 1px solid green; */
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center_form h2 {
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom: 2em;
+}
+
+.form_paper {
+    width: 60%;
+    border: 0.2em solid #620D24;
+    padding: 2em;
+    background-color: #f5efdc;
+}
+
+.form_paper input {
+    margin: 1em 0 1em 0;
+    font-size: 1rem;
+}
+
+.form_paper textarea {
+    margin: 1em 0 0.5em 0;
+    width: 90%;
+    height: 10vw;
+    resize: none;
+    background-color: #f5efdc;
+    border: 0.1em solid #E0BC75;
+    vertical-align: text-top;
+    font-family: 'Roboto', 'Tahoma', 'Verdana',  sans-serif;
+    padding: 1em;
+}
+
+.form_paper input[type="text"], .form_paper input[type="email"] {
+    width: 90%;
+    height: 3vw;
+    padding: 1em;
+    background-color: #f5efdc;
+    border: 0.1vw solid #E0BC75;
+}
+
+.form_paper input[type="text"]::placeholder, .form_paper input[type="email"]::placeholder, textarea {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    opacity: 70%;
+}
+
+.form_paper h3 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 2em 0 0.5em 0;
+}
+
+.form_paper label {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.form_paper p {
+    margin-bottom: 5px;
+}
+
+.form_paper input[type="submit"]{
+    position: relative;
+    width: 100%;
+    border-color: transparent;
+    background-color: #E0BC75;
+    transition: ease-in-out 0.5s;
+    color: white;
+    margin-top: 2em;
+    height: 3vw;
+    font-size: 1rem;
+}
+
+.form_paper input[type="submit"]:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.form_paper input[type="checkbox"], .form_paper input[type="radio"] {
+    width: 1vw;
+    height: 1vw;
+}
+
+.form_paper p {
+    font-size: 0.9rem;
+    color: red;
+    font-weight: 500;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.fast_contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #620D24;
+}
+
+.text_contact_fast {
+    width: 80%;
+    text-align: center;
+    padding: 3em 0 3em 0;
+    color: #E0BC75;
+}
+
+.text_contact_fast h2 {
+    font-family: 'Roboto', 'Tahoma', 'Verdana',  sans-serif;
+    font-weight: 400;
+    padding-bottom: 2em;
+}
+
+.text_contact_fast h1 {
+    font-family: 'Roboto', 'Tahoma', 'Verdana',  sans-serif;
+    font-weight: 600;
+}
+
+#prefered_contact {
+    color: red;
+    font-weight: 400;
+}
+
+@media all and (max-width: 768px){
+    :root {
+        font-size: 14px;
+    }
+
+    .center_form {
+        width: 90%;
+    }
+
+    .form_paper {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 480px){
+    :root {
+        font-size: 10px;
+    }
+
+    .center_form {
+        width: 100%;
+    }
+
+    .form_paper {
+        width: 100%;
+    }
+
+    .form_paper input[type="text"]::placeholder, .form_paper input[type="email"]::placeholder, textarea {
+        font-size: 1rem;
+    }
+
+    .text {
+        height: 300px;
+    }
+
+    .text h1 {
+        font-size: 1.5em;
+    }
+
+    .contact_title {
+        height: 500px;
+    }
+
+    .form_paper textarea {
+        height: 100px;
+    }
+    .form_paper input[type="submit"]{
+        height: 20px;
+    }
+}
